@@ -27,7 +27,4 @@ var password = document.getElementById('password').value;
                     alert('Submission successful!');
                 }, 3000);
             }
-        });
-    </script>
-</body>
-</html>
+        });    </script> </body> </html>
