@@ -1,12 +1,9 @@
-<html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html> <html lang="en">
+<head>   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Example Form</title>
 </head>
 <body>
-
     <form id="myForm">
         <label for="username">enter your username:</label>
         <input type="text" id="username" name="username" required>
@@ -20,13 +17,9 @@
     <script>
         document.getElementById('myForm').addEventListener('submit', function(event) {
             event.preventDefault(); 
-
-          
-            var username = document.getElementById('username').value;
-            var password = document.getElementById('password').value;
-
-            
-            if (username === '' || password === '') {
+var username = document.getElementById('username').value;
+var password = document.getElementById('password').value;
+                if (username === '' || password === '') {
                 alert('Error: Both username and password are required.');
             } else {
                 // Use setTimeout for a delay of 3 seconds
@@ -36,6 +29,5 @@
             }
         });
     </script>
-
 </body>
 </html>
